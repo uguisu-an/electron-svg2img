@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SVG2IMG</title>
+  </head>
+  <body>
+    <h3>svg</h3>
+    <svg
+      id="svg"
+      width="640"
+      height="180"
+      viewbox="0 0 640 180"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <style>
+          @import url("https://fonts.googleapis.com/css?family=Pacifico");
+        </style>
+      </defs>
+      <g>
+        <text x="50" y="50" font-size="35" font-family="Pacifico">
+          Hello Pacifico
+        </text>
+        <text x="50" y="100" font-size="35" font-family="Herculanum">
+          Hello Herculanum
+        </text>
+      </g>
+    </svg>
+
+    <h3>img</h3>
+    <img id="img" src="#"/>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>
